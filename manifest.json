@@ -19,10 +19,15 @@
   },
   "content_scripts": [
     {
-      "matches": ["https://www.dropbox.com/1/oauth/authorize"],
-      "js": ["library/underscore.js", "const.js", "content_script.js"],
-      "run_at": "document_idle"
+      "matches": [
+        "https://www.dropbox.com/1/oauth/authorize",
+        "*://mail.google.com/*"
+      ],
+      "js": ["library/underscore.js", "const.js", "content_script.js", "listener.js"]
     }
   ],
-  "permissions": ["https://*.dropbox.com/"]
+  "permissions": [
+    "https://*.dropbox.com/",
+    "*://mail.google.com/*"
+  ]
 }
