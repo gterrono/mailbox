@@ -23,7 +23,13 @@
         "https://www.dropbox.com/1/oauth/authorize",
         "*://mail.google.com/*"
       ],
-      "js": ["library/underscore.js", "const.js", "content_script.js", "listener.js"]
+      "js": [
+        "library/underscore.js",
+        "library/jquery.js",
+        "const.js",
+        "content_script.js",
+        "listener.js"
+      ]
     }
   ],
   "permissions": [
